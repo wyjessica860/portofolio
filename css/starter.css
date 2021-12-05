@@ -1,0 +1,247 @@
+body{
+    font-family: 'Corben', cursive;
+    background: url('../images/guide_dog.jpeg');  
+    background-color: #f1f1f1;
+    margin: 0;
+    padding: 0;
+    font-size: 16pt; /* test for this! Make all sizes em or rem */
+  }
+  
+  header{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    background: #fff;
+    border-bottom: 3px solid #50C7C7;
+  }
+  
+  h1{
+    font-size: 2em;
+    text-align: center;
+    line-height: 2;
+  }
+  
+  h2{
+    font-size: 1.5em;
+    text-align: center;
+    padding: 5px;
+  }
+  
+  p {
+    padding: 0 30px;
+  }
+  
+  a.skip{
+    background: white;
+    left: 0;
+    padding: 6px;
+    position: absolute;
+    top: -40px;
+    -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+    z-index: 1;
+  }
+  
+  a.skip:focus{
+    top:20px;
+    color: black;
+    text-decoration-style: solid;
+  }
+  
+  *:focus{
+    border: 2px solid black;
+  }
+
+
+  .nav_item a{
+    padding: 10px;
+  }
+  
+  .nav_item a:hover, a:focus{
+    color: #50C7C7;
+    text-decoration: underline;
+    -webkit-text-decoration-style: dotted;
+            text-decoration-style: dotted;
+  }
+
+  .nav_links a:visited{
+    color:#50C7C7;
+  }
+  .nav_links{
+    display: flex;
+    flex-direction:column;
+    align-items:flex-start;
+    
+  }
+  
+  .card > header{
+    background-color: #288080;
+    border: 2px solid #45ADAD;
+    padding: 20px 0px;
+    border-radius: 7px 7px 0 0;
+  }
+
+  .pricing{
+    min-height: 475px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .card {
+    margin: 12px;
+    background: #fff;
+    border-radius: 7px;
+    padding: 0 0 25px 0;
+    min-width:450px;
+  }
+
+  .card > ul{
+    list-style: none;
+    padding-left: 5px;
+  }
+  
+  .card > ul li {
+    width: 90%;
+    margin: 20px auto;
+    
+  }
+
+.card button{
+    width: 90%;
+    height: 40px;
+    border: 0;
+    margin-left: 5%;
+    border-radius: 7px;
+    background: #288080;
+    color: white;
+    font-size: 1em;
+  }
+  
+  .card h3{
+    font-size: 4em;
+    color: white;
+    text-align: center;
+  }
+  
+  .card_big{
+    -webkit-transform: initial;
+            transform: initial;
+  }
+
+  .gallery{
+    min-height: 600px;
+    display:flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: center;
+  }
+  .gallery > img{
+    border: 10px solid #50C7C7;
+    margin: 10px;
+    width: 300px;
+  }
+  
+  footer{
+    background-color: black;
+    color: white;
+    padding: 30px;
+    text-align: center;
+  }
+
+  @keyframes logo_ani {
+    from {width:50px;}
+    to {width: 425px;} 
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+
+  #logo{
+    animation-name: logo_ani;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+  }
+
+  @media screen and (min-width: 850px){
+    .card_big{
+        -webkit-transform: scaleY(1.1);
+        transform: scaleY(1.1);
+        z-index: -99;
+  }
+  
+  header:not(div>header){
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 1;
+}
+
+
+.nav_links{
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+
+
+.card{
+  flex-basis: 250px;
+}
+
+.card > header{
+  display: flex;
+  align-items: start;
+  background-color: #288080;
+  border: 2px solid #45ADAD;
+  padding: 20px 0px;
+  border-radius: 7px 7px 0 0;
+}
+
+#logo{
+  animation:none;
+}
+
+}
+
+
+
+@media print {
+  body{
+    background-color: #FFFFFF;
+    background-image: none;
+  }
+  
+  nav{
+    width:100%;
+  }
+
+  .nav_links{
+    flex-direction:row;
+    justify-content: space-evenly;
+  }
+
+  div{
+    min-height:100%;
+  }
+  .pricing{
+    flex-direction:row;
+    align-items:flex-end;
+    justify-content: stretch;
+  }
+  .card{
+    border: 2px solid #45ADDD;
+    flex-basis: 250px;
+  }
+
+  #gallery, .gallery{
+    display:none;
+  }
+
+ 
+
+}
+

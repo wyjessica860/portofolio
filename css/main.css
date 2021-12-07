@@ -491,6 +491,7 @@ side (fallback if image is missing) */
   width: auto;
   height: 220px;
   margin-top: 10px;
+
 }
 
 .left_button ,.right_button{
@@ -499,6 +500,7 @@ side (fallback if image is missing) */
   border:  black 1px solid ;
   border-radius: 5px;
 }
+
 
 /*==========================================*/
 /* tablet*/

@@ -59,7 +59,7 @@ a.footer{
   font-size: 10px;
   color: white;
 }
-a.footer:hover{
+a.footer:hover, a.footer:focus{
   color:blue;
   text-decoration: underline;
   text-decoration-style: solid;
@@ -112,12 +112,12 @@ main{
 #home-image-gallery img:nth-child(2n){
   transform: rotate(-5deg);
 }
-#home-image-gallery img:hover{
+#home-image-gallery img:hover,#home-image-gallery img:focus{
   opacity: 0.5;
   border:5px dotted #c0eeb6
   ;
 }
-#home-image-gallery img:nth-child(2n):hover{
+#home-image-gallery img:nth-child(2n):hover, #home-image-gallery img:nth-child(2n):focus{
   border:5px dotted #aadcec
   ;
 }
@@ -345,7 +345,7 @@ side (fallback if image is missing) */
 }
 
 
-.flip-card-back {
+.flip-card-back{
   font-size: 15px;
   top: 10%;
   width: 85%;
@@ -646,7 +646,7 @@ header:not(div>header){
   justify-content: space-between;
 }
 
-.sidebar-item:hover{
+.sidebar-item:hover, .sidebar-item:focus{
   color:#faf3de;
   text-decoration: underline;
   text-decoration-style: wavy;
@@ -669,13 +669,13 @@ header:not(div>header){
   transform: rotateY(180deg);
 }
 
-.flip-card:hover .flip-card-inner {
+.flip-card:hover .flip-card-inner, .flip-card:focus-within .flip-card-inner{
   /* Do an horizontal fli
 p when you move the mouse over the flip box container */
   transform: rotateY(180deg);
   transition-delay: 200ms;
 }
-}
+
 
 @media screen and (min-width: 1200px){
 
@@ -726,10 +726,11 @@ p when you move the mouse over the flip box container */
 }
 }
 @media screen and (prefers-reduced-motion: reduce){
-  .flip-card-inner{
+.flip-card-inner{
     animation: none;
  }
- h2, h1{
+
+ h2, h1,main, .sidebar{
      animation: none;
  }
  html{
@@ -738,6 +739,14 @@ p when you move the mouse over the flip box container */
  body{
   background-attachment: initial;
 }
+.skip a{
+  transition: none;
+}
+
+.flip-card-inner{
+  transition: none;
+}
+
 
 }
 

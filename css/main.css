@@ -374,7 +374,7 @@ side (fallback if image is missing) */
 
   height: 100vh;
   overflow-x: hidden;
-  overflow-y: auto;
+  overflow-y: scroll;
 
 }
 .parallax__layer {
@@ -385,12 +385,12 @@ side (fallback if image is missing) */
   left: 0;
 }
 
-.parallax-base {
+.parallax-base,.parallax-base:focus h1{
   margin: auto;
 
   transform: translateZ(0px) translateY(-0.1vw) scale(1);
 }
-.parallax-back {
+.parallax-back,.parallax-back:focus-within p{
   opacity: 0.3;
   transform: translateZ(-6px) translateY(-180px) scale(2.8);
 }

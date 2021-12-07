@@ -63,3 +63,10 @@ function slide_index_change3(n) {
 		x1[slide_I3-1].style.display = "block";   
 		
 		}	
+document.body.onkeyup = function(e) {
+var code = e.keyCode;
+if(code === 74) {
+	window.scrollTo(document.body.scrollLeft,
+					document.body.scrollTop + 500);
+}
+};

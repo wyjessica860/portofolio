@@ -386,18 +386,10 @@ side (fallback if image is missing) */
 }
 
 .parallax-base,.parallax-base:focus h1{
-  margin: auto;
-
   transform: translateZ(0px) translateY(-0.1vw) scale(1);
 }
 .parallax-back,.parallax-back:focus-within p{
-  -webkit-transition: .15s ease-in-out;
--moz-transition: .15s ease-in-out;
--o-transition: .15s ease-in-out;
-
--webkit-transition-property: background-position;
--moz-transition-property: background-position;
--o-transition-property: background-position;
+  
   opacity: 0.3;
   transform: translateZ(-6px) translateY(-180px) scale(2.8);
 }

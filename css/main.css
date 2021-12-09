@@ -226,23 +226,15 @@ a{
   font-size: 15px;
   color: #524039fd;
   font-family: Arvo, sans-serif;
-  display: grid;
-  justify-content: center;
-  text-align: center;
-  grid-template-rows: 0.1fr 2.5fr;
-  row-gap: 30px;
-  padding: 0px 50px 0px;
+  padding: 10px 50px 10px;
+  margin:  1.5em auto 0em;
 }
 #if>p {
   text-align: left;
-  grid-row: 1;
-}
-#if>div{
-  grid-row: 2;
+  margin-bottom: 1.5em;
 }
 .if_a{
   font-weight: bolder;
-  background-color: none;
 }
 .flip-card-list{
   display: flex;
@@ -256,7 +248,6 @@ a{
 /* Flip card on Interesting*/
 /* Flip card on Interesting*/
 .flip-card {
-  
   background-color: transparent;
   border-radius: 30px;
   border: 3px solid #f1f1f1;
@@ -340,8 +331,11 @@ side (fallback if image is missing) */
   font-weight: bolder;
   /* transform: rotateY(180deg); */
 }
-.flip-card-back>p{
+.flip-card-back a{
   text-align: left;
+  color: black;
+  font-size: 15px;
+  text-decoration: none;
 }
 
 /*
@@ -426,49 +420,20 @@ side (fallback if image is missing) */
   font-size: 15px;
   color: #524039fd;
   font-family: Arvo, sans-serif;
-  display: grid;
-  grid-template-columns: 70%;
-  grid-template-rows: 0.5fr 0.1fr 0.5fr 0.1fr 1fr 0.1fr 1fr;
-  row-gap: 40px;
-  justify-items: center;
-  justify-content: center;
+  width: 70%;
+  margin: 1.5em auto 0em;
+
 }
 
-#sp1{
+#sp1,#sp2,#sp3,#sp4{
   text-align: left;
-  grid-row: 1;
+  margin-top: 2.5em;
+  margin-bottom: 2.5em;
 }
-.photoslides1{
-  text-align: center;
-  grid-row: 2;
-}
-#sp2{
-  text-align: left;
-  grid-row: 3;
-}
-.photoslides2{
-  text-align: center;
-  grid-row: 4;
-}
-#sp3{
-  text-align: left;
-  grid-row: 5;
-}
-.photoslides3{
-  text-align: center;
-  grid-row: 6;
-}
-#sp4{
-  text-align: left;
-  grid-row: 7;
-}
-
-
 .photoslides2, .photoslides1, .photoslides3{
   text-align: center;
   border: #76323F 3px solid ;
   border-radius: 1px;
-  width: 100%;
   height: 270px;
 }
 .story-img1>img,.story-img2>img,.story-img3>img{
@@ -558,7 +523,10 @@ a{
     width: 650px;
   }
  /* story */ 
-  #story {
+  #story { 
+    width:100%;
+    display: grid;
+    justify-items: center;
     grid-template-columns: 7% 40% 6% 40% 7%;
     grid-template-rows: 0.3fr 0.6fr 0.8fr 0.8fr;
   }
@@ -568,38 +536,31 @@ a{
     padding: 1em;
   }
   #sp1{
-    text-align: left;
     grid-column: 2 / span 3;
     grid-row: 1;
   }
 
-  #sp2{
-    text-align: left;
+  #sp2{ 
     grid-column: 2;
     grid-row: 2;
   }
   .photoslides1{
-    text-align: center; 
     grid-column: 4; 
     grid-row: 2;
   }
   .photoslides2{
-    text-align: center;
     grid-column: 2;
     grid-row: 3;
   }
   #sp3{
-    text-align: left;
     grid-column: 4;
     grid-row: 3;
   }
   .photoslides3{
-    text-align: center;
     grid-column: 4;
     grid-row: 4;
   }
   #sp4{
-    text-align: left;
     grid-column: 2;
     grid-row: 4;
   }
@@ -667,6 +628,11 @@ a:hover, a:focus{
   color: #444c4e  ;
   display: block;
   transform: rotateY(180deg);
+}
+.flip-card-back a:focus, .flip-card-back a:hover{
+  color:black;
+  text-decoration: underline;  
+  text-decoration-style: solid;
 }
 
 .flip-card:hover .flip-card-inner, .flip-card:focus-within .flip-card-inner{

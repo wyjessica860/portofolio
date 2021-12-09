@@ -32,7 +32,7 @@ main{
 .skip a:focus{
 	top: 0px;
   }
-
+  
 h1{
   color: #76323F;
   font-size: 30px;
@@ -607,7 +607,7 @@ header:not(div>header){
   justify-content: space-between;
 }
 
-a:hover, a:focus{
+ul a:hover, ul a:focus{
   color:#faf3de;
   text-decoration: underline;
   text-decoration-style: wavy;

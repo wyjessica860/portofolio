@@ -691,7 +691,7 @@ p when you move the mouse over the flip box container */
   transform: rotateY(180deg);
   transition-delay: 200ms;
 }
-
+}
 
 @media screen and (min-width: 1200px){
 
@@ -741,6 +741,7 @@ p when you move the mouse over the flip box container */
   margin: auto;
 }
 }
+
 @media screen and (prefers-reduced-motion: reduce){
 .flip-card-inner{
     animation: none;
@@ -763,7 +764,7 @@ p when you move the mouse over the flip box container */
   transition: none;
 }
 .parallax{
-  transform: none;
+  transform:unset;
 }
 
 }

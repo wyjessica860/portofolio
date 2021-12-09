@@ -55,15 +55,7 @@ footer{
   bottom: 0;
   left: 0;
 }
-a.footer{
-  font-size: 10px;
-  color: white;
-}
-a.footer:hover, a.footer:focus{
-  color:blue;
-  text-decoration: underline;
-  text-decoration-style: solid;
-}
+
   @keyframes fadeIn {
     0% { opacity: 0; }
     20% { opacity: 0; }
@@ -165,17 +157,8 @@ nav ul{
   animation-name: slidein;
   animation-duration: 3s; 
 }
-/*
-.sidebar:hover{
-  width:auto;
-  background-color: #aa836b;
-  height: auto;
-  overflow:auto;
-  animation-name: slidein;
-  animation-duration: 3s; 
-}
-*/
-.sidebar-item{
+
+a{
   font-size: 14px;
   color: #3A1D03;
   text-align: center;
@@ -514,7 +497,7 @@ h1{
   margin-top: 10px;
   font-size: 35px;
 }
-.sidebar-item{
+a{
   font-size: 19px;
 }
 #if,#dis,#breed,#story{
@@ -663,7 +646,7 @@ header:not(div>header){
   justify-content: space-between;
 }
 
-.sidebar-item:hover, .sidebar-item:focus{
+a:hover, a:focus{
   color:#faf3de;
   text-decoration: underline;
   text-decoration-style: wavy;

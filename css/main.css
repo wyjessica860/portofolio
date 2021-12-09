@@ -389,6 +389,7 @@ side (fallback if image is missing) */
   background-color: #f1f1f1;
   opacity: .8; 
   width: 90%;
+  margin: auto;
 }
 .parallax-back,.parallax-back:focus-within p{
   opacity: 0.3;

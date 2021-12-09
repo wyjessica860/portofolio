@@ -765,7 +765,7 @@ p when you move the mouse over the flip box container */
   transition: none;
 }
 .parallax{
-  transform:unset;
+  transform:none;
 }
 
 }

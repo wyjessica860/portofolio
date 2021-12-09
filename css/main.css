@@ -589,17 +589,18 @@ a{
     left: 0;
   }
 
+
   .parallax-base, .parallax-base:focus-within h1 {
     margin: auto;
     transform: translateZ(0px) translateY(-8vw) scale(1);
   }
-  .parallax-back,.parallax-back:focus-within p{
+  .parallax-back,.parallax-back:focus-within{
     transform: translateZ(-6px) translateX(120px) translateY(50px) scale(2.8);;
     /* transform:  translateY(-180px) scale(2.8); */
 
     margin: auto;
   }
-  
+ 
  /* ======================================================== */ 
 header:not(div>header){
   flex-direction: row;

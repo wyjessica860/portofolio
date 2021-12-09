@@ -764,7 +764,7 @@ p when you move the mouse over the flip box container */
 .flip-card-inner{
   transition: none;
 }
-.parallax{
+.parallax, .parallax-base,.parallax-back{
   transform:none;
 }
 
